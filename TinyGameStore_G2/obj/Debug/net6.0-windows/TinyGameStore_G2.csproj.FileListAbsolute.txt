@@ -23,3 +23,4 @@ C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore_G2\obj\Debug\net6.0-windows\TinyGameStore_G2.genruntimeconfig.cache
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore_G2\obj\Debug\net6.0-windows\ref\TinyGameStore_G2.dll
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore_G2\obj\Debug\net6.0-windows\TinyGameStore_G2.frmAdminPanel.resources
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore_G2\obj\Debug\net6.0-windows\TinyGameStore_G2.sourcelink.json
