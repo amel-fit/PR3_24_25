@@ -1,0 +1,15 @@
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\bin\Debug\net6.0\TinyGameStore.InMemory.deps.json
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\bin\Debug\net6.0\TinyGameStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\bin\Debug\net6.0\TinyGameStore.InMemory.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\bin\Debug\net6.0\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\bin\Debug\net6.0\TinyGameStore.Data.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.csproj.AssemblyReference.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.AssemblyInfoInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.AssemblyInfo.cs
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGame.93380226.Up2Date
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\refint\TinyGameStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\TinyGameStore.InMemory.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.InMemory\obj\Debug\net6.0\ref\TinyGameStore.InMemory.dll

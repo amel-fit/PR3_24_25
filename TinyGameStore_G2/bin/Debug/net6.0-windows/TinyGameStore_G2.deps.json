@@ -7,14 +7,47 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "TinyGameStore_G2/1.0.0": {
+        "dependencies": {
+          "TinyGameStore.Data": "1.0.0",
+          "TinyGameStore.InMemory": "1.0.0"
+        },
         "runtime": {
           "TinyGameStore_G2.dll": {}
+        }
+      },
+      "TinyGameStore.Data/1.0.0": {
+        "runtime": {
+          "TinyGameStore.Data.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TinyGameStore.InMemory/1.0.0": {
+        "dependencies": {
+          "TinyGameStore.Data": "1.0.0"
+        },
+        "runtime": {
+          "TinyGameStore.InMemory.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }
   },
   "libraries": {
     "TinyGameStore_G2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TinyGameStore.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TinyGameStore.InMemory/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
