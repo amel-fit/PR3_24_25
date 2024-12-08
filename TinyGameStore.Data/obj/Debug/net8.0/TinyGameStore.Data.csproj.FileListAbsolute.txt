@@ -1,0 +1,11 @@
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\bin\Debug\net8.0\TinyGameStore.Data.deps.json
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\bin\Debug\net8.0\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\bin\Debug\net8.0\TinyGameStore.Data.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.AssemblyInfoInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.AssemblyInfo.cs
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.csproj.CoreCompileInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\refint\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\TinyGameStore.Data.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGameStore.Data\obj\Debug\net8.0\ref\TinyGameStore.Data.dll

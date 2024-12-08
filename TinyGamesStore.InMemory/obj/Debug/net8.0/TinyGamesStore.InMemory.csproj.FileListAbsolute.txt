@@ -1,0 +1,15 @@
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\bin\Debug\net8.0\TinyGamesStore.InMemory.deps.json
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\bin\Debug\net8.0\TinyGamesStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\bin\Debug\net8.0\TinyGamesStore.InMemory.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\bin\Debug\net8.0\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\bin\Debug\net8.0\TinyGameStore.Data.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.csproj.AssemblyReference.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.AssemblyInfoInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.AssemblyInfo.cs
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.csproj.CoreCompileInputs.cache
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGame.D3E4BB41.Up2Date
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\refint\TinyGamesStore.InMemory.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\TinyGamesStore.InMemory.pdb
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\TinyGameStore_G2\TinyGamesStore.InMemory\obj\Debug\net8.0\ref\TinyGamesStore.InMemory.dll

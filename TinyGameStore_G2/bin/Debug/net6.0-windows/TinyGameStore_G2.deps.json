@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TinyGameStore_G2/1.0.0": {
+        "runtime": {
+          "TinyGameStore_G2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TinyGameStore_G2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
