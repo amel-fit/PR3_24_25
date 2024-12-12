@@ -39,6 +39,11 @@
             inMemoryDbBindingSource = new BindingSource(components);
             btnBuy = new Button();
             btnAdmin = new Button();
+            btnCreateTable = new Button();
+            Insert = new Button();
+            btnUpdate = new Button();
+            btnDelete = new Button();
+            btnSelect = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvGames).BeginInit();
             ((System.ComponentModel.ISupportInitialize)inMemoryDbBindingSource).BeginInit();
             SuspendLayout();
@@ -53,7 +58,7 @@
             dgvGames.RowHeadersWidth = 51;
             dgvGames.RowTemplate.Height = 29;
             dgvGames.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvGames.Size = new Size(890, 400);
+            dgvGames.Size = new Size(890, 376);
             dgvGames.TabIndex = 1;
             // 
             // Id
@@ -130,11 +135,66 @@
             btnAdmin.UseVisualStyleBackColor = true;
             btnAdmin.Click += btnAdmin_Click;
             // 
+            // btnCreateTable
+            // 
+            btnCreateTable.Location = new Point(170, 527);
+            btnCreateTable.Name = "btnCreateTable";
+            btnCreateTable.Size = new Size(111, 29);
+            btnCreateTable.TabIndex = 5;
+            btnCreateTable.Text = "Create Table";
+            btnCreateTable.UseVisualStyleBackColor = true;
+            btnCreateTable.Click += btnCreateTable_Click;
+            // 
+            // Insert
+            // 
+            Insert.Location = new Point(170, 562);
+            Insert.Name = "Insert";
+            Insert.Size = new Size(111, 29);
+            Insert.TabIndex = 5;
+            Insert.Text = "Insert Row";
+            Insert.UseVisualStyleBackColor = true;
+            Insert.Click += Insert_Click;
+            // 
+            // btnUpdate
+            // 
+            btnUpdate.Location = new Point(287, 527);
+            btnUpdate.Name = "btnUpdate";
+            btnUpdate.Size = new Size(111, 29);
+            btnUpdate.TabIndex = 5;
+            btnUpdate.Text = "Update Row";
+            btnUpdate.UseVisualStyleBackColor = true;
+            btnUpdate.Click += btnUpdate_Click;
+            // 
+            // btnDelete
+            // 
+            btnDelete.Location = new Point(287, 562);
+            btnDelete.Name = "btnDelete";
+            btnDelete.Size = new Size(111, 29);
+            btnDelete.TabIndex = 5;
+            btnDelete.Text = "Delete Row";
+            btnDelete.UseVisualStyleBackColor = true;
+            btnDelete.Click += btnDelete_Click;
+            // 
+            // btnSelect
+            // 
+            btnSelect.Location = new Point(404, 542);
+            btnSelect.Name = "btnSelect";
+            btnSelect.Size = new Size(111, 29);
+            btnSelect.TabIndex = 5;
+            btnSelect.Text = "Select";
+            btnSelect.UseVisualStyleBackColor = true;
+            btnSelect.Click += btnSelect_Click;
+            // 
             // frmStore
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(914, 600);
+            Controls.Add(btnSelect);
+            Controls.Add(btnDelete);
+            Controls.Add(btnUpdate);
+            Controls.Add(Insert);
+            Controls.Add(btnCreateTable);
             Controls.Add(btnAdmin);
             Controls.Add(btnBuy);
             Controls.Add(lblUsername);
@@ -160,5 +220,10 @@
         private DataGridViewTextBoxColumn PublisherName;
         private Button btnBuy;
         private Button btnAdmin;
+        private Button btnCreateTable;
+        private Button Insert;
+        private Button btnUpdate;
+        private Button btnDelete;
+        private Button btnSelect;
     }
 }
