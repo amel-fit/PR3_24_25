@@ -9,3 +9,5 @@ C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.Data\obj\Debug\net6.0\refint\TinyGameStore.Data.dll
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.Data\obj\Debug\net6.0\TinyGameStore.Data.pdb
 C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.Data\obj\Debug\net6.0\ref\TinyGameStore.Data.dll
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.Data\obj\Debug\net6.0\TinyGameStore.Data.sourcelink.json
+C:\Users\Amel Fit\OneDrive - Faculty of Information Technologies\Desktop\PR3\New Vjezbe\TinyGameStore.Data\obj\Debug\net6.0\TinyGameStore.Data.csproj.AssemblyReference.cache

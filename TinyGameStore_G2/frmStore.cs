@@ -16,6 +16,7 @@ namespace TinyGameStore_G2
     public partial class frmStore : Form
     {
         private User LoggedUser { get; set; }
+        private DataContext TinyStoreContext { get; set; } 
         public frmStore()
         {
             InitializeComponent();
@@ -158,6 +159,7 @@ namespace TinyGameStore_G2
                     });
                 }
                 
+                // lstGames should just be set as the source of the dgv Games
 
             }
         }

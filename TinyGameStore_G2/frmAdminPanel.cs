@@ -16,9 +16,9 @@ namespace TinyGameStore_G2
         public frmAdminPanel()
         {
             InitializeComponent();
+            dgvGamesOfUser.AutoGenerateColumns = false;
             cmbUsers.DataSource = null;
             cmbUsers.DataSource = InMemoryDb.GetUsers();
-            dgvGamesOfUser.AutoGenerateColumns = false;
         }
 
         private void cmbUsers_SelectedIndexChanged(object sender, EventArgs e)

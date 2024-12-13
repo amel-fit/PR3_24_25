@@ -42,7 +42,7 @@
             // 
             cmbUsers.DisplayMember = "UserName";
             cmbUsers.DropDownStyle = ComboBoxStyle.DropDownList;
-            cmbUsers.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbUsers.Font = new Font("Segoe UI", 12F);
             cmbUsers.FormattingEnabled = true;
             cmbUsers.Location = new Point(12, 79);
             cmbUsers.Name = "cmbUsers";

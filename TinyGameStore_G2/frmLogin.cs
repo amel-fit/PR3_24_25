@@ -38,10 +38,16 @@ namespace TinyGameStore_G2
         {
             //if (e.KeyChar == '\r')
             //    btnSignIn_Click(sender, e);
-            
-            if(e.KeyChar == (char)Keys.Enter)
+
+            if (e.KeyChar == (char)Keys.Enter)
                 btnSignIn_Click(sender, e);
 
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+                btnSignIn_Click(sender, e);
         }
     }
 }
