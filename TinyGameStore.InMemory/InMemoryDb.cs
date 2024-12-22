@@ -23,6 +23,12 @@ namespace TinyGameStore.InMemory
             db.SaveChanges();
         }
 
+        public static void AddUserGame(UsersGame ug)
+        {
+            db.UsersGames.Add(ug);
+            db.SaveChanges();
+        }
+
         public static User? Authenticate(User user)
         {
             var returnUserArray = db.Users.ToList().Where(u => u.UserName.ToLower() == user.UserName.ToLower() && u.Password == user.Password);
@@ -31,12 +37,33 @@ namespace TinyGameStore.InMemory
             return returnUserArray.ElementAt(0);
         }
 
-        public static User? getUser(string username)
+        public static User? GetUserByUsername(string username)
         {
             var returnUserArray = db.Users.ToList().Where(u => u.UserName.ToLower() == username);
             if ((!returnUserArray.Any())) //apparently Any() is faster than Count() for some reason
                 return null;
             return returnUserArray.ElementAt(0);
+        }
+
+        public static User? GetUserById(int id)
+        {
+            
+            return db.Users.FirstOrDefault(u => u.Id == id);
+            
+        }
+
+        public static List<UsersGame> GetUsersGamesList(int userId)
+        {
+            return db.UsersGames.Where(ug => ug.UserId == userId).ToList();
+        }
+        public static List<Game> GetGamesList(int userId)
+        {
+            var UsersGamesList = GetUsersGamesList(userId);
+            List<Game> GamesList = new List<Game>();
+            foreach (var UserGame in UsersGamesList)
+                    GamesList.Add(db.Games.First(g => g.Id == UserGame.GameId));               
+            
+            return GamesList;
         }
         public static List<Game> getGamesList() => Games;
 

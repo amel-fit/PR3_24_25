@@ -32,16 +32,12 @@ namespace TinyGameStore_G2
             }
         }
 
-        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtLoginField_KeyPress(object sender, KeyPressEventArgs e)
         {
+            
             if (e.KeyChar == (char)Keys.Enter)
                 btnSignIn_Click(sender, e);
         }
 
-        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == (char)Keys.Enter)
-                btnSignIn_Click(sender, e);
-        }
     }
 }

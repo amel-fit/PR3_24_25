@@ -21,19 +21,24 @@ namespace TinyGameStore_G2
             cmbUsers.DataSource = InMemoryDb.GetUsers();
         }
 
+        
+
         private void cmbUsers_SelectedIndexChanged(object sender, EventArgs e)
         {
-            User selectedUser = cmbUsers.SelectedItem as User;
+            User? selectedUser = cmbUsers.SelectedItem as User;
             if (selectedUser == null) return;
 
-            dgvGamesOfUser.DataSource = null;
-            
             List<Game> games = new List<Game>();
-            foreach (var userGame in selectedUser.UsersGames)
+            try
             {
-                
-                games.Add(userGame.Game);
+                games = InMemoryDb.GetGamesList(selectedUser.Id);
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Error in fetching Games List");
+            }
+
+            dgvGamesOfUser.DataSource = null;
             dgvGamesOfUser.DataSource = games;
         }
     }

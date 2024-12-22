@@ -52,14 +52,17 @@ namespace TinyGameStore_G2
                         //Purchase Data
                         PurchaseDate = DateTime.Now,
                         IsGifted = false,
-                        Id = LoggedUser.UsersGames.Count,
+                        //Id = LoggedUser.UsersGames.Count, //let's not manually set the id :)
                         //Game data
                         Game = game,
                         GameId = game.Id,
                         //GameRatings = new List<GameRating>() //don't know what I gotta do here yet...
                     };
                     if (!UserHasGame(ug))
-                        LoggedUser.UsersGames.Add(ug);
+                    {
+                        InMemoryDb.AddUserGame(ug);
+                        //LoggedUser.UsersGames.Add(ug);
+                    }
                 }
             }
 
@@ -67,7 +70,9 @@ namespace TinyGameStore_G2
 
         private bool UserHasGame(UsersGame ug)
         {
-            foreach (var userGame in LoggedUser.UsersGames)
+            var gamesListOfUser = InMemoryDb.GetUsersGamesList(ug.UserId);
+            
+            foreach (var userGame in gamesListOfUser)
             {
                 if (userGame.GameId == ug.GameId)
                     return true;

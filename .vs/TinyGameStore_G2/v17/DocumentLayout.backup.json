@@ -3,52 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore_g2\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore_g2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore_g2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.data\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|solutionrelative:tinygamestore.data\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.data\\tinygamestore.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|solutionrelative:tinygamestore.data\\tinygamestore.data.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FE7F6E96-1BB4-4663-84E0-77E1853B3D5C}|TinyGameStore.InMemory\\TinyGameStore.InMemory.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.inmemory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FE7F6E96-1BB4-4663-84E0-77E1853B3D5C}|TinyGameStore.InMemory\\TinyGameStore.InMemory.csproj|solutionrelative:tinygamestore.inmemory\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FE7F6E96-1BB4-4663-84E0-77E1853B3D5C}|TinyGameStore.InMemory\\TinyGameStore.InMemory.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.inmemory\\inmemorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FE7F6E96-1BB4-4663-84E0-77E1853B3D5C}|TinyGameStore.InMemory\\TinyGameStore.InMemory.csproj|solutionrelative:tinygamestore.inmemory\\inmemorydb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\tinygamestore_g2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.data\\usersgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|solutionrelative:tinygamestore.data\\usersgame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore.data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4EE940C2-D5A8-4F13-A57C-E52E53C6ED98}|TinyGameStore.Data\\TinyGameStore.Data.csproj|solutionrelative:tinygamestore.data\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|c:\\users\\amel fit\\onedrive - faculty of information technologies\\desktop\\pr3\\new vjezbe\\tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|solutionrelative:tinygamestore_g2\\frmadminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{963ABB7B-8F64-467E-A4A2-203B66A4F21B}|TinyGameStore_G2\\TinyGameStore_G2.csproj|C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\tinygamestore_g2\\frmstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -62,162 +30,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\Program.cs",
-              "RelativeDocumentMoniker": "TinyGameStore_G2\\Program.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\Program.cs",
-              "RelativeToolTip": "TinyGameStore_G2\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-14T21:32:00.201Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\Game.cs",
-              "RelativeDocumentMoniker": "TinyGameStore.Data\\Game.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\Game.cs",
-              "RelativeToolTip": "TinyGameStore.Data\\Game.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wBoAAAC8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:00:34.977Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\User.cs",
-              "RelativeDocumentMoniker": "TinyGameStore.Data\\User.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\User.cs",
-              "RelativeToolTip": "TinyGameStore.Data\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T11:50:08.35Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmLogin.cs",
-              "RelativeDocumentMoniker": "TinyGameStore_G2\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmLogin.cs [Design]",
-              "RelativeToolTip": "TinyGameStore_G2\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:52:08.538Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InMemoryDb.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\InMemoryDb.cs",
-              "RelativeDocumentMoniker": "TinyGameStore.InMemory\\InMemoryDb.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\InMemoryDb.cs",
-              "RelativeToolTip": "TinyGameStore.InMemory\\InMemoryDb.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBYAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T10:04:01.835Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\DataContext.cs",
-              "RelativeDocumentMoniker": "TinyGameStore.InMemory\\DataContext.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\DataContext.cs",
-              "RelativeToolTip": "TinyGameStore.InMemory\\DataContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T11:20:18.139Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmLogin.cs",
-              "RelativeDocumentMoniker": "TinyGameStore_G2\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmLogin.cs",
-              "RelativeToolTip": "TinyGameStore_G2\\frmLogin.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:55:34.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "frmStore.cs",
               "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmStore.cs",
               "RelativeDocumentMoniker": "TinyGameStore_G2\\frmStore.cs",
               "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmStore.cs",
               "RelativeToolTip": "TinyGameStore_G2\\frmStore.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAjwDAAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAswBgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:14:00.908Z",
+              "WhenOpened": "2024-12-22T16:55:04.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TinyGameStore.Data",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\TinyGameStore.Data.csproj",
-              "RelativeDocumentMoniker": "TinyGameStore.Data\\TinyGameStore.Data.csproj",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\TinyGameStore.Data.csproj",
-              "RelativeToolTip": "TinyGameStore.Data\\TinyGameStore.Data.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-12-14T22:28:35.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersGame.cs",
-              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\UsersGame.cs",
-              "RelativeDocumentMoniker": "TinyGameStore.Data\\UsersGame.cs",
-              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.Data\\UsersGame.cs",
-              "RelativeToolTip": "TinyGameStore.Data\\UsersGame.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAIwCgAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T15:38:59.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "frmAdminPanel.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmAdminPanel.cs",
               "RelativeDocumentMoniker": "TinyGameStore_G2\\frmAdminPanel.cs",
               "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmAdminPanel.cs [Design]",
               "RelativeToolTip": "TinyGameStore_G2\\frmAdminPanel.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T11:34:05.836Z"
+              "WhenOpened": "2024-12-22T16:43:58.874Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 2,
+              "Title": "InMemoryDb.cs",
+              "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\InMemoryDb.cs",
+              "RelativeDocumentMoniker": "TinyGameStore.InMemory\\InMemoryDb.cs",
+              "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore.InMemory\\InMemoryDb.cs",
+              "RelativeToolTip": "TinyGameStore.InMemory\\InMemoryDb.cs",
+              "ViewState": "AgIAADUAAAAAAAAAAAAkwDYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T10:04:01.835Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "frmAdminPanel.cs",
               "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmAdminPanel.cs",
               "RelativeDocumentMoniker": "TinyGameStore_G2\\frmAdminPanel.cs",
               "ToolTip": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmAdminPanel.cs",
               "RelativeToolTip": "TinyGameStore_G2\\frmAdminPanel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwBwAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwBsAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T11:37:31.328Z"
+              "WhenOpened": "2024-12-05T11:37:31.328Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 4,
               "Title": "frmStore.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\frmStore.cs",
               "RelativeDocumentMoniker": "TinyGameStore_G2\\frmStore.cs",

@@ -45,7 +45,7 @@
             txtUsername.Size = new Size(309, 27);
             txtUsername.TabIndex = 0;
             txtUsername.Text = "sudo";
-            txtUsername.KeyPress += txtUsername_KeyPress;
+            txtUsername.KeyPress += txtLoginField_KeyPress;
             // 
             // txtPassword
             // 
@@ -56,7 +56,7 @@
             txtPassword.Size = new Size(309, 27);
             txtPassword.TabIndex = 1;
             txtPassword.Text = "sudo";
-            txtPassword.KeyPress += txtPassword_KeyPress;
+            txtPassword.KeyPress += txtLoginField_KeyPress;
             // 
             // label1
             // 
