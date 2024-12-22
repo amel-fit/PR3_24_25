@@ -41,9 +41,9 @@ namespace TinyGameStore_G2
             var SelectedGames = dgvGames.SelectedRows;
             for (int i = 0; i < SelectedGames.Count; i++)
             {
-                if (SelectedGames[i]?.DataBoundItem is Game)
+                if (SelectedGames[i]?.DataBoundItem is Game game)
                 {
-                    Game game = SelectedGames[i].DataBoundItem as Game;
+                    //Game game = SelectedGames[i].DataBoundItem as Game;
                     UsersGame ug = new UsersGame()
                     {
                         //User data

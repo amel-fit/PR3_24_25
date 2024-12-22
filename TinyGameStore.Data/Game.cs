@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Drawing;
+using System.Reflection;
+using System.IO;
 
 
 namespace TinyGameStore.Data
@@ -23,6 +25,8 @@ namespace TinyGameStore.Data
                 coverArt = Image.FromStream(new MemoryStream(CoverArt));
             else
                 coverArt = Image.FromFile("C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\Resources\\Marketing_Logo.png");
+            
+
         }
         private Image getImageFromBytes()
         {

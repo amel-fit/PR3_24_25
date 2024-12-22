@@ -5,11 +5,9 @@ namespace TinyGameStore_G2
 {
     public partial class frmLogin : Form
     {
-        private InMemoryDb Db;
         public frmLogin()
         {
-            InitializeComponent();
-            Db = new InMemoryDb();
+            InitializeComponent();          
         }
 
         private void btnSignIn_Click(object sender, EventArgs e)
@@ -36,12 +34,8 @@ namespace TinyGameStore_G2
 
         private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //if (e.KeyChar == '\r')
-            //    btnSignIn_Click(sender, e);
-
             if (e.KeyChar == (char)Keys.Enter)
                 btnSignIn_Click(sender, e);
-
         }
 
         private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
