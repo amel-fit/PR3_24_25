@@ -33,9 +33,9 @@ namespace TinyGameStore_G2
             {
                 games = InMemoryDb.GetGamesList(selectedUser.Id);
             }
-            catch (Exception)
+            catch (Exception err)
             {
-                MessageBox.Show("Error in fetching Games List");
+                MessageBox.Show("Error in fetching Games List " + err.Message);
             }
 
             dgvGamesOfUser.DataSource = null;

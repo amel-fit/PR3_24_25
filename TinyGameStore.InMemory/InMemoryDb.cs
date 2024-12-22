@@ -58,12 +58,43 @@ namespace TinyGameStore.InMemory
         }
         public static List<Game> GetGamesList(int userId)
         {
-            var UsersGamesList = GetUsersGamesList(userId);
-            List<Game> GamesList = new List<Game>();
-            foreach (var UserGame in UsersGamesList)
-                    GamesList.Add(db.Games.First(g => g.Id == UserGame.GameId));               
+            //NOLINQ
+            {  
+                var UsersGamesList = GetUsersGamesList(userId);
+                List<Game> GamesList = new List<Game>();
+                foreach (var UserGame in UsersGamesList)
+                        GamesList.Add(db.Games.First(g => g.Id == UserGame.GameId));               
             
-            return GamesList;
+                return GamesList;
+            }
+
+            //LINQ Invoke
+            {
+                var GamesListQuery = db.UsersGames.Select(UG => db.Games.FirstOrDefault(game => UG.GameId == game.Id && UG.UserId == userId));
+                return GamesListQuery.Where(x => true).ToList();
+                List<Game> GamesList = new List<Game>();
+                for (int i = 0; i < GamesListQuery.Count(); i++)
+                {
+                    GamesList.Add(GamesListQuery.ElementAt(i));
+                }
+                return GamesList;
+            }
+
+
+            
+            //Pure LINQ
+            {
+                List<Game> GamesList =
+                                (List<Game>)
+                                (from UG in db.UsersGames
+                                where UG.UserId == userId
+                                select 
+                                    (from game in db.Games
+                                    where game.Id == UG.GameId
+                                    select game));
+                return GamesList;
+            }
+
         }
         public static List<Game> getGamesList() => Games;
 
