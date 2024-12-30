@@ -16,6 +16,9 @@ namespace TinyGameStore.InMemory
         public DbSet<Game> Games { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UsersGame> UsersGames { get; set; } //not yet :)
+        public DbSet<GamesGenre> GamesGenres { get; set; }
+        public DbSet <Genre> Genres { get; set; }
+        public DbSet <GameRating> GameRatings { get; set; }
         public DataContext() : base() { }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -23,6 +26,26 @@ namespace TinyGameStore.InMemory
             optionsBuilder.UseSqlite($"Data source = {dbPath}");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<GameRating>(entitiy =>
+            {
+                entitiy.HasOne(d => d.UsersGame).WithMany(p => p.GameRatings).HasForeignKey(d => d.UserGamesId);
+            });
+            modelBuilder.Entity<GamesGenre>(entity =>
+            {
+                entity.HasOne(d => d.Game).WithMany(p => p.GamesGenres).HasForeignKey(d => d.GameId);
+                entity.HasOne(d => d.Genre).WithMany(p => p.GamesGenres).HasForeignKey(d => d.GameId);
+            });
+            modelBuilder.Entity<UsersGame>(entity =>
+            {
+                entity.HasOne(d => d.Game).WithMany(p => p.UsersGames).HasForeignKey(d => d.GameId);
+                entity.HasOne(d => d.User).WithMany(p => p.UsersGames).HasForeignKey(d => d.UserId);
+            });
+            
+        }
+
+        
 
     }
 }

@@ -16,13 +16,16 @@ namespace TinyGameStore_G2
     public partial class frmStore : Form
     {
         private User LoggedUser { get; set; }
-        private DataContext TinyStoreContext { get; set; } 
+        private DataContext TinyStoreContext { get; set; }
         public frmStore()
         {
             InitializeComponent();
             dgvGames.AutoGenerateColumns = false;
             dgvGames.DataSource = null;
             dgvGames.DataSource = InMemoryDb.getGamesList();
+
+            lstGenres.DataSource = null;
+            lstGenres.DataSource = InMemoryDb.db.Genres.ToArray();
         }
 
         public frmStore(User user) : this()
@@ -49,10 +52,12 @@ namespace TinyGameStore_G2
                         //User data
                         User = LoggedUser,
                         UserId = LoggedUser.Id,
+
                         //Purchase Data
                         PurchaseDate = DateTime.Now,
                         IsGifted = false,
                         //Id = LoggedUser.UsersGames.Count, //let's not manually set the id :)
+
                         //Game data
                         Game = game,
                         GameId = game.Id,
@@ -71,10 +76,10 @@ namespace TinyGameStore_G2
         private bool UserHasGame(UsersGame ug)
         {
             var gamesListOfUser = InMemoryDb.GetUsersGamesList(ug.UserId);
-            
-            foreach (var userGame in gamesListOfUser)
+
+            foreach (var Game in gamesListOfUser)
             {
-                if (userGame.GameId == ug.GameId)
+                if (Game.Id == ug.GameId)
                     return true;
             }
             return false;
@@ -137,7 +142,7 @@ namespace TinyGameStore_G2
 
         private void btnSelect_Click(object sender, EventArgs e)
         {
-            using(var sqlite = new ManualConnection())
+            using (var sqlite = new ManualConnection())
             {
                 sqlite.Connection.Open();
                 var query = "SELECT * FROM Games";
@@ -150,7 +155,7 @@ namespace TinyGameStore_G2
 
                 var lstGames = new List<Game>();
 
-                while(result.Read())
+                while (result.Read())
                 {
                     var Id = result.GetInt32(0);
                     var Name = result.GetString(1);
@@ -163,10 +168,27 @@ namespace TinyGameStore_G2
                         Price = Price
                     });
                 }
-                
+
                 // lstGames should just be set as the source of the dgv Games
 
             }
+        }
+
+        private void btnAssignGenres_Click(object sender, EventArgs e)
+        {
+            Game selectedGame = dgvGames.SelectedRows[0].DataBoundItem as Game;
+            if (selectedGame == null) return;
+            foreach(var item in lstGenres.SelectedItems)
+            {
+                var genre = item as Genre;
+                var GameGenre = new GamesGenre()
+                {
+                    GameId = selectedGame.Id,
+                    GenreId = genre.Id
+                };
+                InMemoryDb.AddGameGenre(GameGenre);
+            }
+
         }
     }
 }

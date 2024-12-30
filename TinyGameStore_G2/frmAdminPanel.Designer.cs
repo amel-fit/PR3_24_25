@@ -63,6 +63,7 @@
             dgvGamesOfUser.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvGamesOfUser.Size = new Size(776, 316);
             dgvGamesOfUser.TabIndex = 2;
+            dgvGamesOfUser.CellContentClick += dgvGamesOfUser_CellContentClick;
             // 
             // Id
             // 

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
             dgvGames = new DataGridView();
             Id = new DataGridViewTextBoxColumn();
             GameName = new DataGridViewTextBoxColumn();
@@ -44,6 +44,8 @@
             btnUpdate = new Button();
             btnDelete = new Button();
             btnSelect = new Button();
+            lstGenres = new ListBox();
+            btnAssignGenres = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvGames).BeginInit();
             ((System.ComponentModel.ISupportInitialize)inMemoryDbBindingSource).BeginInit();
             SuspendLayout();
@@ -82,9 +84,9 @@
             // ReleaseDate
             // 
             ReleaseDate.DataPropertyName = "ReleaseDate";
-            dataGridViewCellStyle1.Format = "d";
-            dataGridViewCellStyle1.NullValue = "NULL";
-            ReleaseDate.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Format = "d";
+            dataGridViewCellStyle4.NullValue = "NULL";
+            ReleaseDate.DefaultCellStyle = dataGridViewCellStyle4;
             ReleaseDate.HeaderText = "Release";
             ReleaseDate.MinimumWidth = 6;
             ReleaseDate.Name = "ReleaseDate";
@@ -103,7 +105,7 @@
             // lblUsername
             // 
             lblUsername.AutoSize = true;
-            lblUsername.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            lblUsername.Font = new Font("Segoe UI", 24F);
             lblUsername.Location = new Point(12, 9);
             lblUsername.Name = "lblUsername";
             lblUsername.Size = new Size(220, 54);
@@ -116,7 +118,7 @@
             // 
             // btnBuy
             // 
-            btnBuy.Font = new Font("Segoe UI", 13F, FontStyle.Bold, GraphicsUnit.Point);
+            btnBuy.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
             btnBuy.Location = new Point(781, 552);
             btnBuy.Name = "btnBuy";
             btnBuy.Size = new Size(121, 36);
@@ -185,17 +187,41 @@
             btnSelect.UseVisualStyleBackColor = true;
             btnSelect.Click += btnSelect_Click;
             // 
+            // lstGenres
+            // 
+            lstGenres.FormattingEnabled = true;
+            lstGenres.ImeMode = ImeMode.NoControl;
+            lstGenres.ItemHeight = 20;
+            lstGenres.Location = new Point(908, 161);
+            lstGenres.Name = "lstGenres";
+            lstGenres.SelectionMode = SelectionMode.MultiSimple;
+            lstGenres.Size = new Size(150, 304);
+            lstGenres.TabIndex = 6;
+            // 
+            // btnAssignGenres
+            // 
+            btnAssignGenres.Font = new Font("Segoe UI", 13F, FontStyle.Bold);
+            btnAssignGenres.Location = new Point(908, 475);
+            btnAssignGenres.Name = "btnAssignGenres";
+            btnAssignGenres.Size = new Size(150, 36);
+            btnAssignGenres.TabIndex = 3;
+            btnAssignGenres.Text = "ASSIGN";
+            btnAssignGenres.UseVisualStyleBackColor = true;
+            btnAssignGenres.Click += btnAssignGenres_Click;
+            // 
             // frmStore
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(914, 600);
+            ClientSize = new Size(1202, 600);
+            Controls.Add(lstGenres);
             Controls.Add(btnSelect);
             Controls.Add(btnDelete);
             Controls.Add(btnUpdate);
             Controls.Add(Insert);
             Controls.Add(btnCreateTable);
             Controls.Add(btnAdmin);
+            Controls.Add(btnAssignGenres);
             Controls.Add(btnBuy);
             Controls.Add(lblUsername);
             Controls.Add(dgvGames);
@@ -225,5 +251,7 @@
         private Button btnUpdate;
         private Button btnDelete;
         private Button btnSelect;
+        private ListBox lstGenres;
+        private Button btnAssignGenres;
     }
 }

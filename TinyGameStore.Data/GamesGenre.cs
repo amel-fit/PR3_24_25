@@ -1,5 +1,8 @@
-﻿namespace TinyGameStore.Data
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace TinyGameStore.Data
 {
+    [Table("GamesGenres")]
     public class GamesGenre
     {
         public int Id { get; set; }
