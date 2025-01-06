@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgvGames = new DataGridView();
             Id = new DataGridViewTextBoxColumn();
             GameName = new DataGridViewTextBoxColumn();
@@ -62,6 +62,7 @@
             dgvGames.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvGames.Size = new Size(890, 376);
             dgvGames.TabIndex = 1;
+            dgvGames.CellDoubleClick += dgvGames_CellDoubleClick;
             // 
             // Id
             // 
@@ -84,9 +85,9 @@
             // ReleaseDate
             // 
             ReleaseDate.DataPropertyName = "ReleaseDate";
-            dataGridViewCellStyle4.Format = "d";
-            dataGridViewCellStyle4.NullValue = "NULL";
-            ReleaseDate.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Format = "d";
+            dataGridViewCellStyle1.NullValue = "NULL";
+            ReleaseDate.DefaultCellStyle = dataGridViewCellStyle1;
             ReleaseDate.HeaderText = "Release";
             ReleaseDate.MinimumWidth = 6;
             ReleaseDate.Name = "ReleaseDate";
@@ -114,7 +115,7 @@
             // 
             // inMemoryDbBindingSource
             // 
-            inMemoryDbBindingSource.DataSource = typeof(TinyGameStore.InMemory.InMemoryDb);
+            inMemoryDbBindingSource.DataSource = typeof(TinyGameStore.InMemory.DBActions);
             // 
             // btnBuy
             // 

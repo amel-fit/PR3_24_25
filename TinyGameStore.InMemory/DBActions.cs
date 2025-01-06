@@ -1,16 +1,15 @@
 ﻿using Microsoft.EntityFrameworkCore.Storage;
 using System.Data;
+using System.Reflection.Metadata.Ecma335;
 using TinyGameStore.Data;
 
 namespace TinyGameStore.InMemory
 {
-    public class InMemoryDb
+    public class DBActions
     {
         public static DataContext db = new();
         
-        private static List<User> Users { get => db.Users.ToList(); }
-        private static List<Game> Games { get => db.Games.ToList(); }
-        public InMemoryDb() { }
+        public DBActions() { }
 
         private void AddGame(Game game)
         {
@@ -45,8 +44,8 @@ namespace TinyGameStore.InMemory
         }
         public static User? Authenticate(User user)
         {
-            var returnUserArray = db.Users.ToList().Where(u => u.UserName.ToLower() == user.UserName.ToLower() && u.Password == user.Password);
-            if ((!returnUserArray.Any())) //apparently Any() is faster than Count() for some reason
+            var returnUserArray = db.Users.ToList().Where(u => u.UserName.ToLower() == user.UserName.ToLower() && u.Password == user.Password);        
+            if (!returnUserArray.Any())
                 return null;
             return returnUserArray.ElementAt(0);
         }
@@ -69,10 +68,10 @@ namespace TinyGameStore.InMemory
             var temp = db.UsersGames.Where(ug => ug.UserId == userId).Select(g => g.Game).ToList();
             return temp;
         }
-        
-        public static List<Game> getGamesList() => Games;
 
-        public static List<User> GetUsers() => Users;
-        
+        public static bool GameHasGenre(GamesGenre gameGenre)
+        {
+            return db.GamesGenres.Any(gg => gg.GameId == gameGenre.GameId && gg.GenreId == gameGenre.GenreId);
+        }
     }
 }

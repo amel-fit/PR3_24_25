@@ -22,10 +22,10 @@ namespace TinyGameStore_G2
             InitializeComponent();
             dgvGames.AutoGenerateColumns = false;
             dgvGames.DataSource = null;
-            dgvGames.DataSource = InMemoryDb.getGamesList();
+            dgvGames.DataSource = DBActions.db.Games.ToArray();
 
             lstGenres.DataSource = null;
-            lstGenres.DataSource = InMemoryDb.db.Genres.ToArray();
+            lstGenres.DataSource = DBActions.db.Genres.ToArray();
         }
 
         public frmStore(User user) : this()
@@ -65,7 +65,7 @@ namespace TinyGameStore_G2
                     };
                     if (!UserHasGame(ug))
                     {
-                        InMemoryDb.AddUserGame(ug);
+                        DBActions.AddUserGame(ug);
                         //LoggedUser.UsersGames.Add(ug);
                     }
                 }
@@ -75,7 +75,7 @@ namespace TinyGameStore_G2
 
         private bool UserHasGame(UsersGame ug)
         {
-            var gamesListOfUser = InMemoryDb.GetUsersGamesList(ug.UserId);
+            var gamesListOfUser = DBActions.GetUsersGamesList(ug.UserId);
 
             foreach (var Game in gamesListOfUser)
             {
@@ -178,7 +178,7 @@ namespace TinyGameStore_G2
         {
             Game selectedGame = dgvGames.SelectedRows[0].DataBoundItem as Game;
             if (selectedGame == null) return;
-            foreach(var item in lstGenres.SelectedItems)
+            foreach (var item in lstGenres.SelectedItems)
             {
                 var genre = item as Genre;
                 var GameGenre = new GamesGenre()
@@ -186,9 +186,17 @@ namespace TinyGameStore_G2
                     GameId = selectedGame.Id,
                     GenreId = genre.Id
                 };
-                InMemoryDb.AddGameGenre(GameGenre);
+                if (!DBActions.GameHasGenre(GameGenre))
+                    DBActions.AddGameGenre(GameGenre);
+                else
+                    MessageBox.Show("Test");
             }
 
+        }
+        private void dgvGames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var game = dgvGames.SelectedRows[0].DataBoundItem as Game;
+            new frmGameInfo(game).Show();
         }
     }
 }

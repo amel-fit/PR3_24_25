@@ -15,7 +15,7 @@ namespace TinyGameStore.InMemory
         string dbPath = "C:\\Users\\Amel Fit\\OneDrive - Faculty of Information Technologies\\Desktop\\PR3\\New Vjezbe\\TinyGameStore_G2\\Resources\\GamesStoreDB.db";
         public DbSet<Game> Games { get; set; }
         public DbSet<User> Users { get; set; }
-        public DbSet<UsersGame> UsersGames { get; set; } //not yet :)
+        public DbSet<UsersGame> UsersGames { get; set; } 
         public DbSet<GamesGenre> GamesGenres { get; set; }
         public DbSet <Genre> Genres { get; set; }
         public DbSet <GameRating> GameRatings { get; set; }
@@ -35,7 +35,7 @@ namespace TinyGameStore.InMemory
             modelBuilder.Entity<GamesGenre>(entity =>
             {
                 entity.HasOne(d => d.Game).WithMany(p => p.GamesGenres).HasForeignKey(d => d.GameId);
-                entity.HasOne(d => d.Genre).WithMany(p => p.GamesGenres).HasForeignKey(d => d.GameId);
+                entity.HasOne(d => d.Genre).WithMany(p => p.GamesGenres).HasForeignKey(d => d.GenreId);
             });
             modelBuilder.Entity<UsersGame>(entity =>
             {

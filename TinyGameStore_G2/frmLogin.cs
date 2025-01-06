@@ -10,7 +10,7 @@ namespace TinyGameStore_G2
             InitializeComponent();          
         }
 
-        private void btnSignIn_Click(object sender, EventArgs e)
+        private async void btnSignIn_Click(object sender, EventArgs e)
         {
             var user = new User()
             {
@@ -18,7 +18,11 @@ namespace TinyGameStore_G2
                 Password = txtPassword.Text
             };
 
-            var result = InMemoryDb.Authenticate(user);
+            User result = null;
+            await Task.Run(() =>
+            {
+                result = DBActions.Authenticate(user);
+            });
 
             if (result == null)
                 MessageBox.Show("Authentication failed",
@@ -28,13 +32,12 @@ namespace TinyGameStore_G2
             else
             {
                 new frmStore(result).Show();
-                this.Hide();
+                this.Hide();  
             }
         }
 
         private void txtLoginField_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            
+        {   
             if (e.KeyChar == (char)Keys.Enter)
                 btnSignIn_Click(sender, e);
         }
