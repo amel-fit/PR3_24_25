@@ -38,7 +38,10 @@ namespace TinyGameStore_G2
             txtGameName.Text = game.Name;
             txtPublisher.Text = game.Publisher;
             txtReleaseDate.Text = game.ReleaseDate.ToString();
+<<<<<<< HEAD
             lblPrice.Text = "$" + game.Price.ToString();
+=======
+>>>>>>> e2849a41aac5998769b61d7168344ffcac0a7d81
             try
             {
                 txtGenres.Text = genresTextTask.Result;
