@@ -18,7 +18,7 @@ namespace TinyGameStore_G2
             InitializeComponent();
             dgvGamesOfUser.AutoGenerateColumns = false;
             cmbUsers.DataSource = null;
-            cmbUsers.DataSource = InMemoryDb.GetUsers();
+            cmbUsers.DataSource = DBActions.db.Users.ToArray();
         }
         private void cmbUsers_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -28,7 +28,7 @@ namespace TinyGameStore_G2
             List<Game> games = new List<Game>();
             try
             {
-                games = InMemoryDb.GetUsersGamesList(selectedUser.Id);
+                games = DBActions.GetUsersGamesList(selectedUser.Id);
             }
             catch (Exception err)
             {
@@ -43,7 +43,7 @@ namespace TinyGameStore_G2
         {
             Game gameToRate = dgvGamesOfUser.SelectedRows[0].DataBoundItem as Game;
             User userThatRates = cmbUsers.SelectedItem as User;
-            UsersGame ug = InMemoryDb.db.UsersGames.First(UG => UG.GameId == gameToRate.Id && UG.UserId == userThatRates.Id);
+            UsersGame ug = DBActions.db.UsersGames.First(UG => UG.GameId == gameToRate.Id && UG.UserId == userThatRates.Id);
             new frmRateGame(ug).Show();
         }
     }

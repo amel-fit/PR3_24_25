@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TinyGameStore.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+834e31e1a3fba960b89d729a2cfd32a2b5ee9b8d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55fd8057569e3aaa2b7ffc08b814169cead9346c")]
 [assembly: System.Reflection.AssemblyProductAttribute("TinyGameStore.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TinyGameStore.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

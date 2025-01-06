@@ -25,7 +25,7 @@ namespace TinyGameStore_G2
         }
         public frmRateGame(Game g, User u) : this() 
         {
-            UserGame = InMemoryDb.db.UsersGames.First(x => x.GameId == g.Id && x.UserId == u.Id);
+            UserGame = DBActions.db.UsersGames.First(x => x.GameId == g.Id && x.UserId == u.Id);
             GameToRate = g;
             UserThatRates = u;
             lblGame.Text = g.Name;
@@ -51,14 +51,14 @@ namespace TinyGameStore_G2
             };
             //now to check if the user already rated this gamae
             if(!HasUserAlreadyRated(UserGame))
-                InMemoryDb.AddGameRating(rating);
+                DBActions.AddGameRating(rating);
             else
                 MessageBox.Show("You have already rated this game");
         }
 
         private bool HasUserAlreadyRated(UsersGame userGame)
         {
-            return InMemoryDb.db.GameRatings.Where(gr => gr.UserGamesId == UserGame.Id).Any();
+            return DBActions.db.GameRatings.Where(gr => gr.UserGamesId == UserGame.Id).Any();
         }
     }
 }
