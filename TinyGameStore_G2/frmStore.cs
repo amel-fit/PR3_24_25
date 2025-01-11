@@ -1,4 +1,6 @@
-﻿using Microsoft.Data.Sqlite;
+﻿using DataTransferObjects;
+using Microsoft.Data.Sqlite;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +13,7 @@ using System.Windows.Forms;
 using TinyGameStore.Data;
 using TinyGameStore.InMemory;
 
+
 namespace TinyGameStore_G2
 {
     public partial class frmStore : Form
@@ -22,10 +25,21 @@ namespace TinyGameStore_G2
             InitializeComponent();
             dgvGames.AutoGenerateColumns = false;
             dgvGames.DataSource = null;
-            dgvGames.DataSource = DBActions.db.Games.ToArray();
+            dgvGames.DataSource = GetDTOGamesFromGames();
 
             lstGenres.DataSource = null;
             lstGenres.DataSource = DBActions.db.Genres.ToArray();
+        }
+
+        private List<dtoGameWithRating> GetDTOGamesFromGames()
+        {
+            var lstGames = DBActions.db.Games.ToArray();
+            var lstGamesWithRating = new List<dtoGameWithRating>();
+            foreach (var game in lstGames)
+            {
+                lstGamesWithRating.Add(new dtoGameWithRating(game));
+            }
+            return lstGamesWithRating;
         }
 
         public frmStore(User user) : this()
@@ -44,8 +58,9 @@ namespace TinyGameStore_G2
             var SelectedGames = dgvGames.SelectedRows;
             for (int i = 0; i < SelectedGames.Count; i++)
             {
-                if (SelectedGames[i]?.DataBoundItem is Game game)
+                if (SelectedGames[i]?.DataBoundItem is dtoGameWithRating dtoGame)
                 {
+                    var game = dtoGame.G;
                     //Game game = SelectedGames[i].DataBoundItem as Game;
                     UsersGame ug = new UsersGame()
                     {
@@ -195,8 +210,8 @@ namespace TinyGameStore_G2
         }
         private void dgvGames_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var game = dgvGames.SelectedRows[0].DataBoundItem as Game;
-            new frmGameInfo(game).Show();
+            var game = dgvGames.SelectedRows[0].DataBoundItem as dtoGameWithRating;
+            new frmGameInfo(game.G).Show();
         }
     }
 }

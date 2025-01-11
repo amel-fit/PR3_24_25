@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
@@ -23,7 +24,9 @@ namespace TinyGameStore.InMemory
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            
             optionsBuilder.UseSqlite($"Data source = {dbPath}");
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -42,10 +45,13 @@ namespace TinyGameStore.InMemory
                 entity.HasOne(d => d.Game).WithMany(p => p.UsersGames).HasForeignKey(d => d.GameId);
                 entity.HasOne(d => d.User).WithMany(p => p.UsersGames).HasForeignKey(d => d.UserId);
             });
+
+            //modelBuilder.Entity<Game>().Navigation(entity => entity.UsersGames).AutoInclude();
+            //modelBuilder.Entity<UsersGame>().Navigation(entity => entity.GameRatings).AutoInclude();
             
         }
 
-        
+
 
     }
 }

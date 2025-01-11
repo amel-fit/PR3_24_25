@@ -32,6 +32,7 @@
             DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             dgvGames = new DataGridView();
             Id = new DataGridViewTextBoxColumn();
+            AverageRating = new DataGridViewTextBoxColumn();
             GameName = new DataGridViewTextBoxColumn();
             ReleaseDate = new DataGridViewTextBoxColumn();
             PublisherName = new DataGridViewTextBoxColumn();
@@ -52,8 +53,10 @@
             // 
             // dgvGames
             // 
+            dgvGames.AllowUserToAddRows = false;
+            dgvGames.AllowUserToDeleteRows = false;
             dgvGames.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvGames.Columns.AddRange(new DataGridViewColumn[] { Id, GameName, ReleaseDate, PublisherName });
+            dgvGames.Columns.AddRange(new DataGridViewColumn[] { Id, AverageRating, GameName, ReleaseDate, PublisherName });
             dgvGames.Location = new Point(12, 135);
             dgvGames.Name = "dgvGames";
             dgvGames.ReadOnly = true;
@@ -72,6 +75,15 @@
             Id.Name = "Id";
             Id.ReadOnly = true;
             Id.Width = 125;
+            // 
+            // AverageRating
+            // 
+            AverageRating.DataPropertyName = "AverageRating";
+            AverageRating.HeaderText = "Rating";
+            AverageRating.MinimumWidth = 6;
+            AverageRating.Name = "AverageRating";
+            AverageRating.ReadOnly = true;
+            AverageRating.Width = 125;
             // 
             // GameName
             // 
@@ -241,10 +253,6 @@
         private DataGridView dgvGames;
         private Label lblUsername;
         private BindingSource inMemoryDbBindingSource;
-        private DataGridViewTextBoxColumn Id;
-        private DataGridViewTextBoxColumn GameName;
-        private DataGridViewTextBoxColumn ReleaseDate;
-        private DataGridViewTextBoxColumn PublisherName;
         private Button btnBuy;
         private Button btnAdmin;
         private Button btnCreateTable;
@@ -254,5 +262,10 @@
         private Button btnSelect;
         private ListBox lstGenres;
         private Button btnAssignGenres;
+        private DataGridViewTextBoxColumn Id;
+        private DataGridViewTextBoxColumn AverageRating;
+        private DataGridViewTextBoxColumn GameName;
+        private DataGridViewTextBoxColumn ReleaseDate;
+        private DataGridViewTextBoxColumn PublisherName;
     }
 }

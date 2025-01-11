@@ -22,13 +22,13 @@ namespace TinyGameStore_G2
         {
             StringBuilder genresText = new();
             var genresList = DBActions.db.GamesGenres.Where(gg => gg.GameId == game.Id).Select(gg => gg.Genre).ToList();
-            
+
             int genreNum = genresList.Count();
             for (int i = 0; i < genreNum - 1; i++)
             {
                 genresText.Append(genresList.ElementAt(i) + "; ");
             }
-           
+
             genresText.Append(genresList.Last().Name);
             return genresText.ToString();
         }
@@ -45,11 +45,12 @@ namespace TinyGameStore_G2
             {
                 txtGenres.Text = genresTextTask.Result;
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 txtGenres.Text = "No specified genres";
             }
-            
-
         }
+
+        
     }
 }

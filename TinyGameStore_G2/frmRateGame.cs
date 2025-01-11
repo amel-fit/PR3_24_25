@@ -17,13 +17,13 @@ namespace TinyGameStore_G2
     {
         Game GameToRate { get; set; }
         User UserThatRates { get; set; }
-
+        DataContext TinyStoreContext { get; set; } = new();
         UsersGame UserGame { get; set; }
         public frmRateGame()
         {
             InitializeComponent();
         }
-        public frmRateGame(Game g, User u) : this() 
+        public frmRateGame(Game g, User u) : this()
         {
             UserGame = DBActions.db.UsersGames.First(x => x.GameId == g.Id && x.UserId == u.Id);
             GameToRate = g;
@@ -37,21 +37,39 @@ namespace TinyGameStore_G2
 
             GameToRate = ug.Game;
             UserThatRates = ug.User;
-            
+
             lblUserName.Text = ug.User.UserName;
             lblGame.Text = ug.Game.Name;
+
+            var genres = Task.Run(GetGenresText);
+            txtGenres.Text = genres.Result;
         }
+
+        private async Task<string> GetGenresText()
+        {
+            
+            var lstGenres = DBActions.db.GamesGenres.Where(gg => gg.GameId == GameToRate.Id).Select(gg => gg.Genre).ToArray();
+            return string.Join(";", lstGenres.Select(x => x.Name).ToList());
+
+        }
+
 
         private void btnRate_Click(object sender, EventArgs e)
         {
             var rating = new GameRating()
-            {
+            { 
                 UserGamesId = UserGame.Id,
                 Rating = int.Parse(gbRatings.Controls.OfType<RadioButton>().First(rb => rb.Checked == true).Text)
             };
             //now to check if the user already rated this gamae
-            if(!HasUserAlreadyRated(UserGame))
-                DBActions.AddGameRating(rating);
+            if (!HasUserAlreadyRated(UserGame))
+            {
+                DBActions.db.GameRatings.Add(rating);
+                //UserGame.GameRatings.Add(rating);
+                DBActions.db.SaveChanges();
+
+                MessageBox.Show("Test");
+            }
             else
                 MessageBox.Show("You have already rated this game");
         }
@@ -59,6 +77,12 @@ namespace TinyGameStore_G2
         private bool HasUserAlreadyRated(UsersGame userGame)
         {
             return DBActions.db.GameRatings.Where(gr => gr.UserGamesId == UserGame.Id).Any();
+        }
+        
+        private void frmRateGame_Load(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }

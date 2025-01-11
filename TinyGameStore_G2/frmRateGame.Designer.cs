@@ -37,6 +37,7 @@
             lblUserName = new Label();
             lblGame = new Label();
             btnRate = new Button();
+            txtGenres = new TextBox();
             gbRatings.SuspendLayout();
             SuspendLayout();
             // 
@@ -141,17 +142,30 @@
             btnRate.UseVisualStyleBackColor = true;
             btnRate.Click += btnRate_Click;
             // 
+            // txtGenres
+            // 
+            txtGenres.Font = new Font("Segoe UI", 12F);
+            txtGenres.Location = new Point(43, 346);
+            txtGenres.Multiline = true;
+            txtGenres.Name = "txtGenres";
+            txtGenres.ReadOnly = true;
+            txtGenres.Size = new Size(580, 92);
+            txtGenres.TabIndex = 5;
+            txtGenres.Text = "[Genres]";
+            // 
             // frmRateGame
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtGenres);
             Controls.Add(btnRate);
             Controls.Add(lblGame);
             Controls.Add(lblUserName);
             Controls.Add(gbRatings);
             Name = "frmRateGame";
             Text = "frmRateGame";
+            Load += frmRateGame_Load;
             gbRatings.ResumeLayout(false);
             gbRatings.PerformLayout();
             ResumeLayout(false);
@@ -169,5 +183,6 @@
         private Label lblUserName;
         private Label lblGame;
         private Button btnRate;
+        private TextBox txtGenres;
     }
 }

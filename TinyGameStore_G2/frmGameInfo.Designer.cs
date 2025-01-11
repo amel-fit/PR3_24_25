@@ -50,6 +50,7 @@
             txtGameName.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             txtGameName.Location = new Point(242, 28);
             txtGameName.Name = "txtGameName";
+            txtGameName.ReadOnly = true;
             txtGameName.Size = new Size(546, 43);
             txtGameName.TabIndex = 1;
             txtGameName.Text = "[Game Name]";
@@ -59,6 +60,7 @@
             // 
             txtReleaseDate.Location = new Point(624, 92);
             txtReleaseDate.Name = "txtReleaseDate";
+            txtReleaseDate.ReadOnly = true;
             txtReleaseDate.Size = new Size(164, 27);
             txtReleaseDate.TabIndex = 2;
             txtReleaseDate.Text = "[Release Date]";
@@ -67,6 +69,7 @@
             // 
             txtPublisher.Location = new Point(242, 92);
             txtPublisher.Name = "txtPublisher";
+            txtPublisher.ReadOnly = true;
             txtPublisher.Size = new Size(252, 27);
             txtPublisher.TabIndex = 2;
             txtPublisher.Text = "[Publisher]";
@@ -75,6 +78,7 @@
             // 
             txtGenres.Location = new Point(242, 166);
             txtGenres.Name = "txtGenres";
+            txtGenres.ReadOnly = true;
             txtGenres.Size = new Size(546, 27);
             txtGenres.TabIndex = 3;
             txtGenres.Text = "[Genres]";
